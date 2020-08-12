@@ -19,8 +19,9 @@ export default class Header extends Component{
                 </div>
                 <Switch>
                     <Route path="/my-profile" component={Profile}></Route>
+                    <Route path="/goods" component={Products}></Route>
                     <Route exact path="/products" component={Products}></Route>
-                    <Route path="/products/:id" component={ProductDetail}></Route>
+                    <Route exact path="/products/:id" component={ProductDetail}></Route>
                     <Route path="/about-us" component={About}></Route>
                     <Route path="/" component={Home}></Route>
                 </Switch>
